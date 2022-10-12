@@ -13,7 +13,7 @@ Armor::~Armor()
 	int leg = 3;
 	int feet = 4;
 		//type nom	défense	pourcentage de drops
-		char armure[6][4] = {
+		char armure[6][4] {
 			{body, "blastron", 1, 7} ,
 			{head, "casque", 3, 5} ,
 			{feet, "bouclier", 4, 4} ,
