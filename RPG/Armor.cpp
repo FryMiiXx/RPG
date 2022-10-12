@@ -14,14 +14,15 @@ Armor::~Armor()
 	int feet = 4;
 		//type nom	défense	pourcentage de drops
 		char armure[6][4] {
-			{body, "blastron", 1, 7} ,
-			{head, "casque", 3, 5} ,
-			{feet, "bouclier", 4, 4} ,
-			{body, "bûche", 1, 5} ,
-			{leg, "shit", 0, 4} ,
-			{feet, "gantelet", 2, 6}
+			{body, "blastron", 1, 7 / 100 * 6} ,
+			{head, "casque", 3, 5 / 100 * 6} ,
+			{feet, "bouclier", 4, 4 / 100 * 6} ,
+			{body, "bûche", 1, 5 / 100 * 6} ,
+			{leg, "shit", 0, 4 / 100 * 6} ,
+			{feet, "gantelet", 2, 6 / 100 * 6}
 
 		}	
+
 }
 Armor* Armor::clone(const)
 {
