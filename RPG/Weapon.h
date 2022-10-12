@@ -1,7 +1,6 @@
 #pragma once
-
+#include "Player.h"
 class Weapon :
-	public 
 
 {
 	private
