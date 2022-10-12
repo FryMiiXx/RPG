@@ -13,6 +13,10 @@ public:
 		int sellValue = 0);
 	virtual ~Armor();
 
+	//Pure Virtual
+	
+	virtual Armor* clone(const);
+
 	//Functions
 	std::string toString();
 
