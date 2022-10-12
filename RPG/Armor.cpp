@@ -8,14 +8,18 @@ Armor::Armor(int type, int defense, std::string name, int level, int buyValue, i
 }
 Armor::~Armor()
 {
-		// nom	défense	pourcentage de drops
-		char armure[6][3] = {
-			{"blastron", 1, 7} ,
-			{"casque", 3, 5} ,
-			{"bouclier", 4, 4} ,
-			{"bûche", 100, 0.2} ,
-			{"shit", 0, 4} ,
-			{"gantelet", 2, 6}
+	int head = 1;
+	int body = 2;
+	int leg = 3;
+	int feet = 4;
+		//type nom	défense	pourcentage de drops
+		char armure[6][4] = {
+			{body, "blastron", 1, 7} ,
+			{head, "casque", 3, 5} ,
+			{feet, "bouclier", 4, 4} ,
+			{body, "bûche", 1, 5} ,
+			{leg, "shit", 0, 4} ,
+			{feet, "gantelet", 2, 6}
 
 		}	
 }
@@ -28,4 +32,8 @@ std::string Armor::toString()
 	std::string str = std::to_string(this->type) + " " + std::to_string(this->defense);
 
 	return str;
+}
+Armor::Player()
+{
+
 }

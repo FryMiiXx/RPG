@@ -9,7 +9,7 @@ Weapon::Weapon(int damageMin, int damageMax, std::string name, int level, int bu
 Weapon::~Weapon()
 {
 	// nom	dégats	pourcentage de drops
-	char armes[5][3] = {
+	char armes[5][3] {
 		{"bâton", 1, 7} ,
 		{"épée", 3, 5} ,
 		{"lance", 4, 4} ,
@@ -29,3 +29,9 @@ std::string Weapon::toString()
 
 	return str;
 } 
+Weapon::Player() 
+{
+
+
+
+}
