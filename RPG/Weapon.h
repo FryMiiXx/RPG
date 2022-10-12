@@ -13,6 +13,10 @@ public:
 		int sellValue = 0);
 	virtual ~Weapon();
 
+	//Pure Virtual
+	
+	virtual Weapon* clone()const;
+
 	//Functions
 	std::string toString();
 

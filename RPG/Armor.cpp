@@ -9,11 +9,15 @@ Armor::Armor(int type, int defense, std::string name, int level, int buyValue, i
 Armor::~Armor()
 {
 
-
+	
+}
+Armor* Armor::clone(const)
+{
+	return new Armor(*this);
 }
 std::string Armor::toString()
 {
-	std::string str = std::to_string(this->damageMin) + " " + std::to_string(this->damageMax);
+	std::string str = std::to_string(this->type) + " " + std::to_string(this->defense);
 
 	return str;
 }
